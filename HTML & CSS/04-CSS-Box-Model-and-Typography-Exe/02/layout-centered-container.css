@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.green-border {
+    border: 2px solid green;
+    padding: 40px;
+}
+
+.blue-border {
+    width: 780px;
+    border: 2px solid blue;
+    margin:auto;
+    padding: 40px;
+}
+
+.site-section {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
