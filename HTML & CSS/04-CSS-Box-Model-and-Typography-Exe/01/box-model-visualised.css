@@ -1,0 +1,38 @@
+.content-box {
+    width: 500px;
+    background-color: #a3d2e2;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+}
+
+.padding-box {
+    background-color: #85eb86;
+    padding: 40px;
+    display: inline-block;
+}
+
+.border-box {
+    background-color: #ffe8c6;
+    padding: 40px;
+    display: inline-block;
+}
+
+.margin-box {
+    background-color: #ff966f;
+    padding: 40px;
+    display: inline-block;
+}
+
+div {
+    position: relative;
+    border-width: 1px;
+    border-color: black;
+    border-style: dashed;
+}
+
+span {
+    position: absolute;
+    left: 5px;
+    top: 0;
+}
