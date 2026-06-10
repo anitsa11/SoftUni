@@ -1,0 +1,37 @@
+body {
+    background-color: #ebebeb;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #2d2d2d;
+}
+
+h3 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.card {
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 20px gray;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-content {
+    padding: 20px 30px 30px;
+}
+
+.card footer {
+    margin-top: 30px;
+}
+
+.card footer em {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
