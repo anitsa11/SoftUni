@@ -1,0 +1,134 @@
+body {
+    font-family: 'DM Mono', monospace;
+    background-color: #747C7F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-card {
+    background-color: #F8F4EF;
+    width: 90%;
+    max-width: 960px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.name {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.header-card {
+    background-color: #EDE8E2;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    justify-content: space-between;
+}
+
+.first-menu a {
+    text-decoration: none;
+    color: #666666;
+    margin: 0 16px;
+    padding: 0 2px;
+    font-size: 13px;
+}
+
+.second-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.second-menu img {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.7;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+}
+
+.left-info {
+    width: 50%;
+}
+
+.left-info h1 {
+    font-size: 35px;
+    font-weight: 500;
+    color:  black;
+    margin-bottom: 30px;
+}
+
+.person-info {
+    font-size: 15px;
+    color: rgb(96, 93, 93);
+    margin-bottom: 35px;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #C84B31;
+    color: #F8F4EF;
+    text-decoration: none;
+    padding: 10px 35px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.right-info {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.img-container {
+    width: 320px;
+    height: 320px;
+    border: 4px solid #747171;
+    border-radius: 90px;
+    overflow: hidden;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.footer-card {
+    padding: 0 60px 60px 60px;
+}
+
+.trusted-text {
+    font-size: 10px;
+    color: #747C80;
+    margin-bottom: 15px;
+}
+
+.brands-container {
+    display: flex;
+    gap: 75px;
+}
+
+.prog-brand {
+    width: 80px;
+    height: 80px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prog-brand img {
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+}
