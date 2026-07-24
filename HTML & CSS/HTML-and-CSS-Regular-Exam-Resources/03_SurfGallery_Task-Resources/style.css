@@ -82,8 +82,8 @@ nav a {
 }
 
 .surf-img img {
-    width: 250px;
-    height: 400px;
+    width: 350px;
+    height: 600px;
     object-fit: cover;
     margin: 0 10px;
 }
@@ -91,7 +91,8 @@ nav a {
 .article-info {
     display: flex;
     gap: 40px;
-    padding: 40px;
+    padding: 40px 150px;
+    
 }
 
 .article-info>div {
