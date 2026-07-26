@@ -10,15 +10,10 @@ var DaysOfTheWeek;
     DaysOfTheWeek[DaysOfTheWeek["Saturday"] = 6] = "Saturday";
     DaysOfTheWeek[DaysOfTheWeek["Sunday"] = 7] = "Sunday";
 })(DaysOfTheWeek || (DaysOfTheWeek = {}));
-function dayOfTheWeeks(day) {
-    // if (day in DaysOfTheWeek) {
-    //     console.log(DaysOfTheWeek[day])
-    // } else {
-    //     console.log("error")
-    // }
+function reversedDayOfTheWeek(day) {
     console.log(DaysOfTheWeek[day] || "error");
 }
-dayOfTheWeeks(1);
-dayOfTheWeeks(5);
-dayOfTheWeeks(-1);
-//# sourceMappingURL=01-DayOfTheWeek.js.map
+reversedDayOfTheWeek('Monday');
+reversedDayOfTheWeek('Sunday');
+reversedDayOfTheWeek('5');
+//# sourceMappingURL=02-ReversedDayOfTheWeek.js.map
