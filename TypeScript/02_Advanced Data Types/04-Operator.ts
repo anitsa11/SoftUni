@@ -21,6 +21,6 @@ function operator(
 }
 
 console.log(operator(['First', 'Second', 'Third'], 'Index', 1));
-console.log(operator('string', 'Index', 4));
+console.log(operator('string', 'Index', 1));
 console.log(operator(['Just', 'Two'], 'Length', 5));
 console.log(operator('7', 'Add', 3));
