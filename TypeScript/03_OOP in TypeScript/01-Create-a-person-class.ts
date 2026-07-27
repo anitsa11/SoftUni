@@ -1,16 +1,25 @@
 class Person {
-    firstName: string;
-    lastName: string;
-    age: number;
+    // firstName: string;
+    // lastName: string;
+    // age: number;
 
-    constructor (firstName: string, 
-        lastName: string,
-        age: number
-    ) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
+    // constructor (firstName: string, 
+    //     lastName: string,
+    //     age: number
+    // ) {
+    //     // this.firstName = firstName;
+    //     // this.lastName = lastName;
+    //     // this.age = age;
+    // }
+
+    constructor (
+        public firstName: string, 
+        public lastName: string,
+        public age: number,
+    ){
+
     }
+
 
     introduce() {
         return`My name is ${this.firstName} ${this.lastName} and I am ${this.age} years old.`
