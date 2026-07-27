@@ -15,5 +15,5 @@ function reversedDayOfTheWeek(day) {
 }
 reversedDayOfTheWeek('Monday');
 reversedDayOfTheWeek('Sunday');
-reversedDayOfTheWeek('5');
+reversedDayOfTheWeek('invalid');
 //# sourceMappingURL=02-ReversedDayOfTheWeek.js.map
