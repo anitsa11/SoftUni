@@ -22,6 +22,11 @@ class Car extends Vihicle {
     //     this.model = model;
     // }
 
+    override drive() {
+        return `Driving a ${this.brand} ${this.model}`
+    }
+
 }
 
 const car = new Car("Toyota", "Corolla");
+console.log(car.drive());
