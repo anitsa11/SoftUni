@@ -15,6 +15,15 @@ class Car extends Vihicle {
         super(brand);
         this.model = model;
     }
+    // model: string;
+    // constructor (brand: string, model: string) {
+    //     super(brand);
+    //     this.model = model;
+    // }
+    drive() {
+        return `Driving a ${this.brand} ${this.model}`;
+    }
 }
 const car = new Car("Toyota", "Corolla");
+console.log(car.drive());
 //# sourceMappingURL=03-Simple-inheritence.js.map

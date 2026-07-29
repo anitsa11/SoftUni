@@ -21,15 +21,12 @@ abstract class Animal {
     makeSound():void {
         console.log(this.sound);
     }
-
 }
 
 class Dog extends Animal {
     constructor (){
         super( "Woof");
     }
-
-
 }
 let dog = new Dog();
 dog.makeSound();
