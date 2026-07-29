@@ -12,6 +12,9 @@ class Calculator {
             case "power":
                 return Math.pow(a, b);
             case "log":
+                if(a<=0 || b <= 0 || a===1) {
+                    throw new Error ("Invalid data!")
+                }
                 return Math.log(a) / Math.log(b);
             case "add":
                 return numbers.reduce((acc,curr) => acc + curr,0)
