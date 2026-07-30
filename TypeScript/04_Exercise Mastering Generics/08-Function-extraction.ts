@@ -1,5 +1,6 @@
 type FunctionPropertyNames<T> = {
     [K in keyof T]: T[K] extends Function ? K : never
+//   "test"       : () => string extends Function ? "test" : never
 } [keyof T]
 
 type AllFunctions<T> = Pick<T, FunctionPropertyNames<T>>;
