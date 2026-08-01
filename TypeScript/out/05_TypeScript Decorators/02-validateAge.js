@@ -37,5 +37,5 @@ __decorate([
     __metadata("design:paramtypes", [Number])
 ], Age.prototype, "age", null);
 let ageVal = new Age(10);
-console.log(ageVal.age = 10);
+console.log(ageVal.age = -10);
 //# sourceMappingURL=02-validateAge.js.map
