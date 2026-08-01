@@ -57,4 +57,6 @@ let holidayManager = new HolidayManager();
 holidayManager.reserveVacation(holiday, BeachVacation.ScubaDiving);
 holidayManager.reserveVacation(holiday2, BeachVacation.Sea);
 console.log(holidayManager.listReservations());
+// let holiday3 = new PlannedHoliday(new Date(2021, 3, 14), new Date(2020, 3, 17));
+// let holiday4 = new PlannedHoliday(new Date(2024, 2, 1), new Date(2024, 1, 4));
 //# sourceMappingURL=07-Holiday-manager.js.map
