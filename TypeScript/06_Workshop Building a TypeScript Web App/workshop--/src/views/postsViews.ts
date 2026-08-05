@@ -10,7 +10,7 @@ function singlePostTemplate(post: Post) {
     </li>`;
 }
 
-export async function createPostTemplate() {
+export async function postsTemplate() {
     const res = await services.postsService.getll();
     const template = `
     <h1>Posts</h1>
