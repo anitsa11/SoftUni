@@ -18,7 +18,7 @@ export class GuildStash<T extends WithId> {
     }
 
     public getAll(): T[] {
-        return this.records.slice() //-плитко копие
+        return this.records.slice() //[...this.records]-плитко копие
     }    
 }
 
