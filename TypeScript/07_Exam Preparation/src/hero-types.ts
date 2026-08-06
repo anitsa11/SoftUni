@@ -40,3 +40,46 @@ export abstract class BaseHero implements Hero {
     abstract attack(): number;
 }
 
+export class Warrior extends BaseHero {
+    constructor(id: number, name: string, level: number, public strength: number) {
+        super(id, name, level, HeroRole.Warrior);
+    }
+
+    calculateStamina(): number {
+        return this.level * 10 + this.strength * 5;
+    }
+
+    //TODO Decorator:
+    attack(): number {
+        return this.strength * 2        
+    }
+}
+
+export class Mage extends BaseHero {
+    constructor(id: number, name: string, level: number, public mana: number) {
+        super(id, name, level, HeroRole.Warrior);
+    }
+
+    calculateStamina(): number {
+        return this.level * 5 + this.mana * 2
+    }
+
+    attack(): number {
+        return this.mana * 2;
+    }
+}
+
+export class Archer extends BaseHero {
+    constructor(id: number, name: string, level: number, public agility: number) {
+        super(id, name, level, HeroRole.Warrior);
+    }
+
+    calculateStamina(): number {
+        return this.level * 8 + this.agility * 4;
+    }
+
+    attack(): number {
+        return this.agility * 2;
+    }
+
+}
