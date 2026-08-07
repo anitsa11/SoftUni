@@ -5,15 +5,6 @@ import { CriticalStrike } from './decorators';
 
 async function main() {
     //Example 1: Heroes
-const manager = new GameManager();
-const warrior = new Warrior(1, "Arthur", 10, 50); // id, name, level, strength
-const mage = new Mage(2, "Gandalf", 20, 100); // id, name, level, mana
-
-console.log(manager.addHero(warrior));
-console.log(manager.addHero(mage));
-
-
-    //Example 2: Stash and Equipment
 // const manager = new GameManager();
 // const warrior = new Warrior(1, "Arthur", 10, 50); // id, name, level, strength
 // const mage = new Mage(2, "Gandalf", 20, 100); // id, name, level, mana
@@ -21,17 +12,26 @@ console.log(manager.addHero(mage));
 // console.log(manager.addHero(warrior));
 // console.log(manager.addHero(mage));
 
-// const sword: Weapon = { id: 101, name: "Excalibur", damage: 120 };
-// const staff: Weapon = { id: 102, name: "Elder Staff", damage: 150 };
 
-// console.log(manager.addWeaponToStash(sword));
-// console.log(manager.addWeaponToStash(staff));
+    // Example 2: Stash and Equipment
+const manager = new GameManager();
+const warrior = new Warrior(1, "Arthur", 10, 50); // id, name, level, strength
+const mage = new Mage(2, "Gandalf", 20, 100); // id, name, level, mana
 
-// console.log(manager.equipWeapon(1, 101));
-// console.log(manager.equipWeapon(99, 102)); // Invalid hero
-// console.log(manager.equipWeapon(2, 999)); // Invalid weapon
+console.log(manager.addHero(warrior));
+console.log(manager.addHero(mage));
 
-// manager.listAllHeroes().forEach(line => console.log(line));
+const sword: Weapon = { id: 101, name: "Excalibur", damage: 120 };
+const staff: Weapon = { id: 102, name: "Elder Staff", damage: 150 };
+
+console.log(manager.addWeaponToStash(sword));
+console.log(manager.addWeaponToStash(staff));
+
+console.log(manager.equipWeapon(1, 101));
+console.log(manager.equipWeapon(99, 102)); // Invalid hero
+console.log(manager.equipWeapon(2, 999)); // Invalid weapon
+
+manager.listAllHeroes().forEach(line => console.log(line));
 
     //Example 3: Decorator and Combat Test
 // const manager = new GameManager();
