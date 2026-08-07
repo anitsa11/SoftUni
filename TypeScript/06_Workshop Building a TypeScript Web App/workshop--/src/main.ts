@@ -8,3 +8,14 @@ const router = new Router ({
   "/posts/create": () => {},
   "/users": () => {},
 });
+
+function setupLinks() {
+  const allLinks = document.querySelectorAll("nav a");
+
+  allLinks.forEach(link => link.addEventListener("click", (e) => {
+    e.preventDefault();
+    router.navigate((link as HTMLAnchorElement).pathname);
+  }))
+}
+
+setupLinks();
