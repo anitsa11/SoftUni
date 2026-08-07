@@ -1,3 +1,4 @@
+import { CriticalStrike } from "./decorators";
 import { WithId } from "./models";
 import { HeroRole } from "./models";
 import { Hero } from "./models";
@@ -49,7 +50,7 @@ export class Warrior extends BaseHero {
         return this.level * 10 + this.strength * 5;
     }
 
-    //TODO Decorator:
+    @CriticalStrike
     attack(): number {
         return this.strength * 2        
     }
