@@ -14,7 +14,7 @@ export class GuildStash<T extends WithId> {
     public take(id: number): T | undefined {
         const foundIndex = this.records.findIndex((item) => item.id === id);
         if (foundIndex === -1) 
-            return undefined
+            return undefined;
         return this.records.splice(foundIndex,1)[0];
     }
 
@@ -58,11 +58,11 @@ export class Warrior extends BaseHero {
 
 export class Mage extends BaseHero {
     constructor(id: number, name: string, level: number, public mana: number) {
-        super(id, name, level, HeroRole.Warrior);
+        super(id, name, level, HeroRole.Mage);
     }
 
     calculateStamina(): number {
-        return this.level * 5 + this.mana * 2
+        return this.level * 5 + this.mana * 2;
     }
 
     attack(): number {
@@ -72,7 +72,7 @@ export class Mage extends BaseHero {
 
 export class Archer extends BaseHero {
     constructor(id: number, name: string, level: number, public agility: number) {
-        super(id, name, level, HeroRole.Warrior);
+        super(id, name, level, HeroRole.Archer);
     }
 
     calculateStamina(): number {
@@ -82,5 +82,4 @@ export class Archer extends BaseHero {
     attack(): number {
         return this.agility * 2;
     }
-
 }

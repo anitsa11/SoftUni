@@ -1,6 +1,5 @@
 import { Weapon } from "./models";
-import { BaseHero, GuildStash, Mage, Warrior } from "./hero-types";
-import { Archer } from "./hero-types";
+import { BaseHero, GuildStash, Mage, Warrior, Archer } from "./hero-types";
 
 export class GameManager {
     private heroes: BaseHero[] = [];
@@ -34,15 +33,15 @@ export class GameManager {
     public listAllHeroes(): string[] {
         let result = [`--- Guild Roster ---`];
 
-        const getSpecialData = function ( hero:BaseHero) {
+        const getSpecialData = function ( hero: BaseHero) {
             if (hero instanceof Warrior) {
-                return `Strength: ${hero.strength}`
+                return `Strength: ${hero.strength}`;
             } else if (hero instanceof Mage) {
-                return `Mana: ${hero.mana}`
+                return `Mana: ${hero.mana}`;
             } else if (hero instanceof Archer) {
-                return `Agility: ${hero.agility}`
+                return `Agility: ${hero.agility}`;
             }
-        }
+        };
 
         this.heroes.forEach((hero) => {
             result.push(`[${hero.role}] ${hero.name} (Level: ${hero.level}, ${getSpecialData(hero)}) - Stamina: ${hero.calculateStamina()}`)
@@ -51,5 +50,4 @@ export class GameManager {
         result.push('--------------------');
         return result;
     }
-
 }
