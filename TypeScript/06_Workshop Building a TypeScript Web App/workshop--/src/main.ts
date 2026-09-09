@@ -5,7 +5,7 @@ import { postsTemplate} from './views/postsViews.ts'
 
 const router = new Router ({
   "/posts": postsTemplate,
-  "/posts/create": () => {},
+  "/posts/create": createPostTemplate,
   "/users": userTemplate,
 });
 
