@@ -11,7 +11,7 @@ function singlePostTemplate(post: Post) {
 }
 
 export async function postsTemplate() {
-    const res = await services.postsService.getll();
+    const res = await services.postsService.getAll();
     const template = `
     <h1>Posts</h1>
     <ul>
