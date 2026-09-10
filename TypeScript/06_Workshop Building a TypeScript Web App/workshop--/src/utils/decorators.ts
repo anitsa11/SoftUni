@@ -14,7 +14,7 @@ export function log(
 
         const end = performance.now();
 
-        console.log(`Executed in ${(start-end).toFixed(2)}ms`);
+        console.log(`Executed in ${(end-start).toFixed(2)}ms`);
 
         return result;
     };

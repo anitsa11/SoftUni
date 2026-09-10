@@ -1,4 +1,4 @@
-
+import { log } from "../utils/decorators.ts"
 import type { OmitId } from "../types/omitId";
 
 export abstract class ApiService<T extends { id: number }> {
@@ -8,11 +8,13 @@ export abstract class ApiService<T extends { id: number }> {
         this.baseServiceUrl = baseServiceUrl;
     }
 
+    @log
     async getll(): Promise<T[]> {
         const res = await fetch(this.baseServiceUrl);
         return res.json();
     }
-
+    
+    @log
     async create(itemData: OmitId<T>): Promise<T> {
         const res = await fetch(this.baseServiceUrl, {
             method: "POST",
@@ -25,6 +27,7 @@ export abstract class ApiService<T extends { id: number }> {
         return res.json();
     }
 
+    @log
     async update(id: number, itemData: T): Promise<T> {
         const res = await fetch(`${this.baseServiceUrl}/${id}`,
             {
@@ -38,6 +41,7 @@ export abstract class ApiService<T extends { id: number }> {
         return res.json();
     }
 
+    @log
     async delete(id: number): Promise<void> {
         await fetch(`${this.baseServiceUrl}/${id}`, {
             method: "DELETE"
