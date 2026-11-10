@@ -20,7 +20,7 @@ body {
 }
 
 .header-card {
-    background-color: #EDE8E2;
+    background-color: #ace3d4;
     display: flex;
     align-items: center;
     padding: 20px 40px;
@@ -72,15 +72,15 @@ body {
     line-height: 1.6;
 }
 
-.btn {
-    display: inline-block;
+/* .btn { */
+    /* display: inline-block;
     background-color: #C84B31;
     color: #F8F4EF;
     text-decoration: none;
     padding: 10px 35px;
-    border-radius: 8px;
+    border-radius: 3px;
     font-size: 14px;
-}
+} */
 
 .right-info {
     width: 50%;
