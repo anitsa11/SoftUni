@@ -7,7 +7,7 @@ export default function App() {
     <View style={styles.container}>
       <Text style={{ textAlign: 'center', fontSize: 40 }}>Hello</Text>
       <Text>Hello World!</Text>
-      <StatusBar style="auto" />
+      <StatusBar style="auto" /> 
     </View>
   );
 }
