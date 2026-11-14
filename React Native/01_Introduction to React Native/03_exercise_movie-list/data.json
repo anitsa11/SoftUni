@@ -1,0 +1,76 @@
+{
+    "movies": [
+        {
+            "id": 1,
+            "title": "Inception",
+            "year": 2010,
+            "director": "Christopher Nolan",
+            "genre": "Sci-Fi",
+            "durationMinutes": 148,
+            "posterURL": "https://image.tmdb.org/t/p/w500/oYuLEt3zVCKq57qu2F8dT7NIa6f.jpg"
+        },
+        {
+            "id": 2,
+            "title": "The Dark Knight",
+            "year": 2008,
+            "director": "Christopher Nolan",
+            "genre": "Action",
+            "durationMinutes": 152,
+            "posterURL": "https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg"
+        },
+        {
+            "id": 3,
+            "title": "Interstellar",
+            "year": 2014,
+            "director": "Christopher Nolan",
+            "genre": "Sci-Fi",
+            "durationMinutes": 169,
+            "posterURL": "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Titanic",
+            "year": 1997,
+            "director": "James Cameron",
+            "genre": "Romance",
+            "durationMinutes": 194,
+            "posterURL": "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg"
+        },
+        {
+            "id": 5,
+            "title": "The Matrix",
+            "year": 1999,
+            "director": "Lana Wachowski, Lilly Wachowski",
+            "genre": "Sci-Fi",
+            "durationMinutes": 136,
+            "posterURL": "https://image.tmdb.org/t/p/w500/p96dmYpuX4VQF3Q9x5n9q8Y6kY.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Gladiator",
+            "year": 2000,
+            "director": "Ridley Scott",
+            "genre": "Action",
+            "durationMinutes": 155,
+            "posterURL": "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg"
+        },
+        {
+            "id": 7,
+            "title": "Forrest Gump",
+            "year": 1994,
+            "director": "Robert Zemeckis",
+            "genre": "Drama",
+            "durationMinutes": 142,
+            "posterURL": "https://image.tmdb.org/t/p/w500/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg"
+        },
+        {
+            "id": 8,
+            "title": "The Shawshank Redemption",
+            "year": 1994,
+            "director": "Frank Darabont",
+            "genre": "Drama",
+            "durationMinutes": 142,
+            "posterURL": "https://image.tmdb.org/t/p/w500/9cqNxx0GxF0bflZmeSMuL5tnGzr.jpg"
+        }
+    ]
+}
