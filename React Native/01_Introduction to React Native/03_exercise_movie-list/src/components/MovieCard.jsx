@@ -24,6 +24,7 @@ export default function MovieCard({
                 </View>
                 <View>
                     <Text style={styles.meta}>{year} . {formatDuration(durationMinutes)}</Text>
+                    <Text style = {styles.director}>{director}</Text>
 
                 </View>
 
@@ -70,7 +71,11 @@ const styles = StyleSheet.create({
         fontSize: 13,
         marginTop: 6,
     },
-
-
+    director: {
+        color: colors.textMuted,
+        fontSize: 14,
+        marginTop: 4,
+        marginBotton: 10,
+    },
 
 })
