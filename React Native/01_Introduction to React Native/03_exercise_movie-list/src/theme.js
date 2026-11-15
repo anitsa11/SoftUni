@@ -6,5 +6,4 @@ export const colors = {
     textMuted: '#9a9aab',
     accent: '#f5c518',
     favorite: '#e5484d',
-
 }
