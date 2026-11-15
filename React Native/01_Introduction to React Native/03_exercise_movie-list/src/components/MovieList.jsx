@@ -1,16 +1,40 @@
-import { Text, View } from "react-native";
+import { Text, View, StyleSheet} from "react-native";
+
+import {colors} from '../theme';
+
 import MovieCard from "./MovieCard";
 
 export default function MovieList({
     movies
 }) {
     return (
-        <View>
-            <Text style={{ color: '#ffffff', fontSize: 24, marginTop: 50 }}> Каталог Филми </Text>
+        <View style={styles.content}>
+            <View style={styles.header}>
+                <Text style={styles.title}> Каталог Филми </Text>
 
-            <MovieCard
-            {...movies[0]}
-            />
+
+
+            </View> 
+           {movies.map(movie => <MovieCard key={movie.id} {...movie} />)}
         </View>
     );
 }
+
+const styles = StyleSheet.create({
+    content: {
+        paddingTop: 64,
+        paddingHorizontal: 16,
+        paddingBottom: 32,
+    },
+    header: {
+        marginBottom: 16,
+    },
+    title: {
+        cplor: colors.text,
+        fontSize: 32,
+        fontWeight: 'bold',
+    },
+    subtitle: {
+        color: colors.textMuted,
+    }
+})
