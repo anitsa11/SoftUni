@@ -1,20 +1,19 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, useColorScheme, View } from 'react-native';
+import { Host, Column, Button } from '@expo/ui';
 
 export default function App() {
+  const colorScheme = useColorScheme();
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <Host style={{ flex: 1 }}>
+      <Column spacing = {12} alignment = "center">
+      <Text textStyle = {{ color: colorScheme ==='dark' ? '#ffffff' : '#000000'}}>
+        Hello, world!
+      </Text>
+      <Button label = "Press me" onPress={ () => alert('Pressed')}></Button>
+      </Column>
+    </Host>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
